@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varibles in js</title>
+    <style>
+        body{
+            background-color: rgb(241, 199, 206);
+            }
+        h1{
+            text-align: center;
+            color: red;
+            text-decoration: underline green;
+            font-size: 50px;
+            font-family: monospace;
+        }
+        h2,h3{
+            color: blue;
+            font-family: monospace;
+            font-size: 30px;
+        }
+        h4{
+            color: rgb(19, 123, 123);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ol{
+            color: brown;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: decimal-leading-zero;
+            line-height: 40px;
+        }
+        span{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables in JavaScript</h1>
+
+    <h2>Definition:</h2>
+
+    <h4> A variable in JavaScript is a named container for storing data values. It allows developers to store, retrieve, and manipulate data dynamically.</h4>
+    <h3>Types of Variables in JavaScript:</h3>
+    <h4>JavaScript provides three ways to declare variables:</h4>
+    
+    <ol>
+     <li> <span>var:-</span> Function-scoped, can be re-declared and updated, hoisted</li>
+    <li> <span>let:-</span> Block-scoped, can be updated but not re-declared in the same scope</li>
+     <li><span>const:-</span> Block-scoped, cannot be updated or re-declared</li>
+    </ol>
+    
+
+
+    <script>
+        //varibles in js(LET,VAR,CONST)
+
+        //LET,BY USEING "LET" WE CAN CHANGE THE VALUES ANY TIME AND IS IA BLOCK LEVEL SCOPE
+        
+        let number;
+        console.log(number); //declration
+        number = 50;  //initialazition
+        number = 100;
+        number = 10;
+        number = 500;
+        console.log(number);
+
+        /*let a = 300;
+        let a = 500;   //IT IS A SYNTAX ERROR
+        console.log(a+a);*/
+        
+
+        //VAR ,IS IA FUNCTIONAL LEVEL SCOPE &BY USEING "VAR" WE CAN CHANGE THE VALUES ANY TIME
+        var name;
+        name = 200;
+        name = 'sagar';
+        console.log(name);
+
+        var b = 300;
+        var b = 400;
+        console.log(b);
+
+        function cal(){
+            if(true){
+                var x= 10;
+            }
+            console.log(x);
+        }
+        cal();
+
+        //const, by useing this we can not change the values they are constant
+        const  Name = 'sathish';
+        console.log(Name);
+
+
+        //PROBLEMS ON VARBLES TO SOLVE
+        
+
+        //1.LET,BY USEING "LET" WE CAN CHANGE THE VALUES ANY TIME AND IS IA BLOCK LEVEL SCOPE
+            //VAR ,IS IA FUNCTIONAL LEVEL SCOPE &BY USEING "VAR" WE CAN CHANGE THE VALUES ANY TIME
+            //const, by useing this we can not change the values they are constant
+
+        //2.
+        let age = 22;
+            age = 25;
+            console.log(age); 
+
+        /*3.
+        const a = 50;
+        const b = 30;
+        b = 300;
+        console.log(b); //b alredy declated
+        */
+
+        //4.
+        let userName = "Ejjagiri Sathsih"
+        console.log(userName);
+
+        //5.
+         let isStudent = true;
+         isStudent = false;
+         console.log(isStudent);
+        
+         //6.
+        var greeting;
+        console.log(greeting); //undefined
+        greeting = "Hello!"
+        console.log(greeting);
+
+        //7.
+        a = 20;
+        b = 30;
+        console.log("Before Swapping");
+        console.log("a=",a);
+        console.log("b =",b);
+        console.log("The swapping process");
+        a = a+b;
+        console.log(a);
+        b = a-b;
+        console.log(b);
+        a = a-b;
+        console.log(a);
+        console.log("After swapping");
+        console.log("a=",a);
+        console.log("b=",b);
+
+        //8.
+        let x ;
+        if(!x == undefined){
+            console.log(10);
+        } else {
+            console.log(x);
+        }
+       
+    </script>
+</body>
+</html>
